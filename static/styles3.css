@@ -1,0 +1,33 @@
+/* Define custom color variables */
+:root {
+    --primary-color: #bf8748; /* Main color */
+    background-color: rgb(238, 223, 197);
+}
+
+/* Apply styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--primary-color);
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style table header */
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Style alternating row background */
+tr {
+    background-color: #f2f2f2; /* Set the background color for all rows */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #ddd;
+}

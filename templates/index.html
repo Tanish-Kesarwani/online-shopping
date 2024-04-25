@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css"> 
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Online Shopping</h1>
+      <nav>
+        <ul>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/customers">Customer</a></li>
+          <li><a href="/orders">Orders</a></li>
+          <li><a href="/order_item">Order Items</a></li>
+          <li><a href="/product">Products</a></li>
+          <li><a >Cart</a></li>
+          <li><a >Wishlist</a></li>
+        </ul>
+        <form action="#" method="get" class="search-form">
+          <input type="text" name="search" placeholder="Search">
+          
+      </nav>
+    </div>
+  </header>
+
+  <section id="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product">
+        <img src="{{ url_for('static', filename='img/indoor plant.jpeg') }}" alt="Image">
+
+        <h3>Indoor Plant</h3>
+        <p>Description</p>
+        <button>Add to Cart</button>
+        <button>Wishlist</button>
+      </div>
+      <!-- More products go here -->
+      <div class="product">
+        <img src="{{ url_for('static', filename='img/dream catcher.jpeg') }}" alt="Image">
+        <h3>Dream Catcher</h3>
+        <p>Description</p>
+        <button>Add to Cart</button>
+        <button>Wishlist</button>
+      </div>
+
+      <div class="product">
+        <img src="{{ url_for('static', filename='img/keychain.jpeg') }}" alt="Image">
+        <h3>Key Chain</h3>
+        <p>Description</p>
+        <button>Add to Cart</button>
+        <button>Wishlist</button>
+      </div>
+        
+
+      <div class="product">
+        <img src="{{ url_for('static', filename='img/mug4.webp') }}" alt="Image">
+        <h3>Ceramic Mug</h3>
+        <p>Description</p>
+        <button>Add to Cart</button>
+        <button>Wishlist</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Online Shopping</p>
+    </div>
+  </footer>
+</body>
+</html>

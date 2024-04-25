@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}" type="text/css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Customers</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Home Address</th>
+            <th>Other Address</th>
+            <th>Personal Phone</th>
+            <th>Other Phone</th>
+        </tr>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer[0] }}</td>
+            <td>{{ customer[1] }}</td>
+            <td>{{ customer[2] }}</td>
+            <td>{{ customer[3] }}</td>
+            <td>{{ customer[4] }}</td>
+            <td>{{ customer[5] }}</td>
+            <td>{{ customer[6] }}</td>
+            <td>{{ customer[7] }}</td>
+            <td>{{ customer[8] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
